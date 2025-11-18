@@ -75,6 +75,8 @@ def round_robin_csv_to_df(filename_or_path):
 
 df = round_robin_csv_to_df(filename)
 
+df['Breakout Room'] = df.groupby('Round').cumcount() + 1 # assign breakout rooms per round
+
 # Assuming df is your DataFrame with columns: round, student1, student2
 selected_round = st.select_slider(
             'Select Round',
