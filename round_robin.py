@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import time
-# st.cache_data.clear()
+# st.cache_data.clear() # use if necessary
 st.title("Round Robin Speed Dating App")
 
 filename = './Students_list_for_speed_dating.csv'
